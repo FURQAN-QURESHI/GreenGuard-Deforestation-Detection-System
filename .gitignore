@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Python
+venv/
+.venv/
+venv_gg/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+*.env
+!.env.example
+
+# Models (too large for Git - download separately)
+model/
+*.pth
+*.h5
+*.pkl
+
+# Build outputs
+dist/
+build/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MongoDB
+data/
+**/data/db/
+*.wt
+WiredTiger*
+mongod.lock
+
+# chore: extend .gitignore for additional artifacts
