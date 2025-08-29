@@ -1,0 +1,370 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* ========================================
+   GREENGUARD PROFESSIONAL DESIGN SYSTEM
+   ======================================== */
+
+:root {
+    /* Colors - Modern Ecological Palette (Light Mode) */
+    --color-primary: #86efac;
+    /* Green 300 - Softer green for light mode */
+    --color-primary-dark: #22c55e;
+    /* Green 500 */
+    --color-primary-light: #bbf7d0;
+    /* Green 200 */
+    --color-accent: #0f172a;
+    /* Dark Slate for accent */
+
+    --color-bg-body: #f1f5f9;
+    /* Slate 100 */
+    --color-bg-card: #ffffff;
+    /* White */
+    --color-bg-sidebar: #ffffff;
+    /* White */
+
+    --color-text-main: #0f172a;
+    /* Slate 900 */
+    --color-text-muted: #64748b;
+    /* Slate 500 */
+    --color-text-invert: #ffffff;
+
+    /* Typography */
+    --font-main: 'Outfit', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+
+    /* Effects */
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --glass-effect: rgba(255, 255, 255, 0.8);
+    --glass-border: 1px solid #e2e8f0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: var(--font-main);
+}
+
+/* ========================================
+   CUSTOM COMPONENT STYLES
+   ======================================== */
+
+/* Professional Card */
+.gg-card {
+    background: var(--color-bg-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: var(--shadow-card);
+    padding: 24px;
+    transition: all 0.3s ease;
+    border: var(--glass-border);
+    color: var(--color-text-main);
+}
+
+.gg-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Glassmorphism Panel */
+.gg-glass-panel {
+    background: var(--glass-effect);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+/* Modern Button Base */
+.gg-btn {
+    font-family: var(--font-main);
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    padding: 12px 24px;
+    border-radius: 12px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.gg-btn:active {
+    transform: scale(0.98);
+}
+
+/* Button Variants */
+.gg-btn-primary {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-text-invert);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.gg-btn-primary:hover {
+    box-shadow: 0 6px 16px rgba(5, 150, 105, 0.4);
+    filter: brightness(1.05);
+}
+
+.gg-btn-secondary {
+    background: white;
+    color: var(--color-primary);
+    border: 1px solid #e2e8f0;
+}
+
+.gg-btn-secondary:hover {
+    background: #f0fdf4;
+    border-color: var(--color-primary-light);
+}
+
+/* Custom Input */
+.gg-input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gg-input-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+}
+
+.gg-input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    background: var(--color-bg-card);
+    font-family: var(--font-main);
+    color: var(--color-text-main);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.gg-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.1);
+    outline: none;
+}
+
+/* Sidebar Styling */
+.gg-sidebar {
+    background: var(--color-bg-sidebar);
+    color: var(--color-text-main);
+}
+
+.gg-nav-item {
+    position: relative;
+    padding: 14px 20px;
+    margin: 4px 12px;
+    border-radius: 12px;
+    color: var(--color-text-muted);
+    transition: all 0.2s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gg-nav-item:hover,
+.gg-nav-item.active {
+    background: rgba(34, 197, 94, 0.08);
+    color: var(--color-primary-dark);
+}
+
+.gg-nav-item.active::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 4px;
+    background: var(--color-primary);
+    border-radius: 0 4px 4px 0;
+}
+
+/* Animated Gradient Text */
+.gg-gradient-text {
+    background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+/* ========================================
+   LEAFLET CUSTOMIZATION
+   ======================================== */
+.leaflet-container {
+    font-family: var(--font-main) !important;
+}
+
+.leaflet-draw-toolbar a {
+    background-color: white !important;
+    color: var(--color-text-main) !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: var(--shadow-card) !important;
+}
+
+.leaflet-draw-actions li a {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+}
+
+/* ========================================
+   MOBILE RESPONSIVENESS
+   ======================================== */
+@media (max-width: 768px) {
+    .gg-card {
+        padding: 24px !important;
+    }
+
+    .gg-btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    /* Stack flex containers on mobile */
+    .lg\:flex {
+        display: none !important;
+    }
+
+    /* Ensure full width inputs */
+    .gg-input {
+        font-size: 16px;
+        /* Prevent zoom on iOS */
+    }
+}
+
+/* ========================================
+   CUSTOM SCROLLBAR
+   ======================================== */
+/* Webkit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-body);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-bg-card);
+    /* Subtle normally */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+    /* Neon on hover */
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+
+/* Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-bg-body);
+}
+
+/* Global resets and base */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #1b2d27;
+  background: #f8fdf9;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Smooth scrollbar overrides */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f0faf4; }
+::-webkit-scrollbar-thumb { 
+  background: #74c69d; 
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: #40916c; 
+}
+
+/* Selection color */
+::selection { 
+  background: #d8f3dc; 
+  color: #1a3c2e; 
+}
+
+/* Smooth transitions globally */
+button, a, input, select, textarea {
+  transition: all 0.2s ease;
+}
+
+/* Focus ring */
+button:focus-visible, 
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #40916c;
+  outline-offset: 2px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* =======================================
+   KILL ALL LEAFLET ANIMATIONS
+   ======================================= */
+.leaflet-zoom-animated {
+  transition: none !important;
+}
+.leaflet-tile {
+  transition: none !important;
+  opacity: 1 !important;
+}
+.leaflet-tile-container {
+  opacity: 1 !important;
+}
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-fade-anim .leaflet-popup {
+  transition: none !important;
+  opacity: 1 !important;
+}
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  transition: none !important;
+}
+
