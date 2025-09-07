@@ -60,3 +60,5 @@ export default App;
 // fix(client): register auth routes in App router
 
 // fix(client): ensure all routes protected as required
+
+// wire auth routes in App
