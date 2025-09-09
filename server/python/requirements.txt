@@ -1,0 +1,16 @@
+flask
+numpy
+pillow
+torch
+torchvision
+matplotlib
+segmentation-models-pytorch
+requests
+pystac-client
+planetary-computer
+odc-stac
+rioxarray
+pandas
+shapely
+pyproj
+
