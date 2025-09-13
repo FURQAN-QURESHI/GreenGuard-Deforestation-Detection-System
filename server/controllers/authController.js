@@ -224,3 +224,5 @@ exports.resetPassword = async (req, res) => {
 // fix(auth): clean up expired PendingUser documents
 
 // style(server): reformat auth controller
+
+// nodemailer for otp
