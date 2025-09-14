@@ -37,3 +37,5 @@ export default API;
 // fix(client): add missing request timeout
 
 // fix baseURL port
+
+// add updateReport and analyzeArea exports

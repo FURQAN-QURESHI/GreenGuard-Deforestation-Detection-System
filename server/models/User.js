@@ -42,3 +42,5 @@ const UserSchema = new mongoose.Schema({
 module.exports = mongoose.model('User', UserSchema);
 
 // feat(auth): migrate User schema to name/password_hash fields
+
+// migrate to name/password_hash
