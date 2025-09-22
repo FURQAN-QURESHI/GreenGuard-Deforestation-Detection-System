@@ -226,3 +226,5 @@ exports.resetPassword = async (req, res) => {
 // style(server): reformat auth controller
 
 // nodemailer for otp
+
+// switch to password_hash compare
