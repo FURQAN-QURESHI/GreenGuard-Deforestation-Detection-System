@@ -167,3 +167,5 @@ module.exports = router;
 // fix(reports): handle ObjectId cast errors on DELETE
 
 // fix(reports): prevent duplicate report names per user
+
+// /analyze spawns python
