@@ -286,3 +286,5 @@ export default Signup;
 // fix(auth): handle 'already verified' error state
 
 // style(auth): unify Login and Signup visual language
+
+// connect signup with otp
