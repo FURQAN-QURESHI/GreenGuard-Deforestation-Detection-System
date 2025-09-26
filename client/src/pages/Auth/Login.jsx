@@ -197,3 +197,5 @@ export default Login;
 // fix(auth): final Login page bug fixes
 
 // connect login to backend
+
+// redesign split-screen branding
