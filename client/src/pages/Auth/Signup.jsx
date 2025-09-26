@@ -288,3 +288,5 @@ export default Signup;
 // style(auth): unify Login and Signup visual language
 
 // connect signup with otp
+
+// otp verification step

@@ -230,3 +230,5 @@ exports.resetPassword = async (req, res) => {
 // switch to password_hash compare
 
 // verifyOTP controller
+
+// forgotPassword + resetPassword
