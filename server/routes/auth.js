@@ -32,3 +32,5 @@ router.post('/reset-password', resetPassword);
 module.exports = router;
 
 // feat(auth): expose /forgot-password and /reset-password routes
+
+// expose forgot + reset routes
