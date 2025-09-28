@@ -506,3 +506,5 @@ if __name__ == "__main__":
 # feat(ml): add verbose mode for debugging
 
 # shapely for polygon area
+
+# bi-temporal diff logic
