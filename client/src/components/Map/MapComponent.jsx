@@ -306,3 +306,5 @@ export default MapComponent;
 // fix(map): prevent draw tool double-initialization
 
 // feat(map): add measurement tool for drawn polygons
+
+// polygon drawing with react-leaflet-draw
