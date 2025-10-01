@@ -680,3 +680,5 @@ export default Dashboard;
 // style(dashboard): align map error state with theme
 
 // fix(dashboard): abort pending requests on unmount
+
+// 6-month date range selection
