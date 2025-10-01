@@ -508,3 +508,5 @@ if __name__ == "__main__":
 # shapely for polygon area
 
 # bi-temporal diff logic
+
+# ensemble stub for 3 models
