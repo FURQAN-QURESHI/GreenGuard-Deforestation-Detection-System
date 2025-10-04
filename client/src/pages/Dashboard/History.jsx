@@ -1265,3 +1265,5 @@ export default History;
 // style(history): final table styling
 
 // fix(history): correct date formatting in table
+
+// fetch and render reports
