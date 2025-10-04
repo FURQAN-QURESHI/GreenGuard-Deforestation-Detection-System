@@ -625,3 +625,5 @@ export default ResultsPanel;
 // fix(dashboard): handle missing mask gracefully
 
 // fix(dashboard): correct tooltip positioning
+
+// show deforestation percent
