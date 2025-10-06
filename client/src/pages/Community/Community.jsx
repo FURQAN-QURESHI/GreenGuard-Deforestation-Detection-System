@@ -1234,3 +1234,5 @@ export default Community;
 // feat(community): final UI polish and animations
 
 // render posts list
+
+// post creation modal
