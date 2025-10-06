@@ -1232,3 +1232,7 @@ export default Community;
 // feat(community): add community selector with search
 
 // feat(community): final UI polish and animations
+
+// render posts list
+
+// post creation modal
