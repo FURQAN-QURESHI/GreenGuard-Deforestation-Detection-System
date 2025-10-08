@@ -374,3 +374,5 @@ module.exports = router;
 // feat(community): introduce Community entity with member counts
 
 // fix(community): handle missing req.user.name gracefully
+
+// like endpoint with likedBy
