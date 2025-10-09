@@ -1267,3 +1267,5 @@ export default History;
 // fix(history): correct date formatting in table
 
 // fetch and render reports
+
+// inline editing of report names
