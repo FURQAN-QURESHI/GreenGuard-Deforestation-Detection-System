@@ -199,3 +199,5 @@ export default Login;
 // connect login to backend
 
 // redesign split-screen branding
+
+// handle network errors
