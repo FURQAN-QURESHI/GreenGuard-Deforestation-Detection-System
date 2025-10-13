@@ -352,3 +352,5 @@ export default Home;
 // feat(home): add team section
 
 // fix(home): correct navigation anchor scrolling
+
+// hero section with animated bg
