@@ -354,3 +354,5 @@ export default Home;
 // fix(home): correct navigation anchor scrolling
 
 // hero section with animated bg
+
+// feature cards section
