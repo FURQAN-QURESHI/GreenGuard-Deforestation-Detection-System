@@ -356,3 +356,5 @@ export default Home;
 // hero section with animated bg
 
 // feature cards section
+
+// CTA section and footer
