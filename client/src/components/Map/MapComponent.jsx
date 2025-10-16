@@ -308,3 +308,5 @@ export default MapComponent;
 // feat(map): add measurement tool for drawn polygons
 
 // polygon drawing with react-leaflet-draw
+
+// fix tile URL Satellite view
