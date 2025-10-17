@@ -310,3 +310,5 @@ export default MapComponent;
 // polygon drawing with react-leaflet-draw
 
 // fix tile URL Satellite view
+
+// satellite/street view toggle
