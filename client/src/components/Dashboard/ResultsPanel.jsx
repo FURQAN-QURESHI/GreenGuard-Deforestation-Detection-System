@@ -629,3 +629,5 @@ export default ResultsPanel;
 // show deforestation percent
 
 // render mask overlay
+
+// before/after compare slider
