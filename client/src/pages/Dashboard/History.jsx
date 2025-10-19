@@ -1269,3 +1269,5 @@ export default History;
 // fetch and render reports
 
 // inline editing of report names
+
+// sort by date and name
