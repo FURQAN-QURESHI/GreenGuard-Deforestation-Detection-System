@@ -627,3 +627,7 @@ export default ResultsPanel;
 // fix(dashboard): correct tooltip positioning
 
 // show deforestation percent
+
+// render mask overlay
+
+// before/after compare slider

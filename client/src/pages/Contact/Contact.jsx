@@ -657,3 +657,5 @@ export default Contact;
 // feat(contact): finalize Contact page
 
 // fix(contact): correct form reset after submission
+
+// redesign split-screen
