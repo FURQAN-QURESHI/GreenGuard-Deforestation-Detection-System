@@ -682,3 +682,5 @@ export default Dashboard;
 // fix(dashboard): abort pending requests on unmount
 
 // 6-month date range selection
+
+// persist area in URL state
