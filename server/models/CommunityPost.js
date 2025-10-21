@@ -123,3 +123,5 @@ const CommunityPost = mongoose.model(
 module.exports = { Community, CommunityPost };
 
 // feat(community): extend schema with Community reference
+
+// extend schema with Community ref
