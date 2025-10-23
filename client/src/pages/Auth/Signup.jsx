@@ -290,3 +290,5 @@ export default Signup;
 // connect signup with otp
 
 // otp verification step
+
+// handle already verified state
