@@ -514,3 +514,5 @@ if __name__ == "__main__":
 # ensemble voting across 3 models
 
 # confidence threshold per model
+
+# pixel-to-hectares conversion
