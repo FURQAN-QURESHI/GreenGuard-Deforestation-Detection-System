@@ -43,3 +43,5 @@ router.post('/', async (req, res) => {
 module.exports = router;
 
 // feat(contact): validate email format server-side
+
+// email format validation

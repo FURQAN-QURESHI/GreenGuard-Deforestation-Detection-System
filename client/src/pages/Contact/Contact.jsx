@@ -659,3 +659,5 @@ export default Contact;
 // fix(contact): correct form reset after submission
 
 // redesign split-screen
+
+// success/failure feedback animation
