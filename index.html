@@ -1,112 +1,121 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GreenGuard – Deforestation Detection System</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GreenGuard – Deforestation Detection System</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-  <div class="page-frame">
-    <!-- top thin border area with profile -->
-    <header class="top-header">
-      <h1 class="brand">GreenGuard</h1>
 
-      <div class="top-right">
-        <button class="profile-btn" title="Profile">
-          <div class="profile-icon">
-  <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile">
+<!-- CSS -->
+<link rel="stylesheet" href="style.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="page-frame">
+      <header class="top-header">
+        <h1 class="brand">GreenGuard</h1>
+        <div class="top-right">
+          <button class="profile-btn" title="Profile">
+            <div class="profile-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+                alt="Profile"
+              />
+            </div>
+          </button>
+        </div>
+      </header>
+
+
+  <nav class="main-nav">
+    <ul>
+      <li class="nav-item active">Home</li>
+      <li class="nav-item">Update</li>
+      <li class="nav-item">News</li>
+      <li class="nav-item">Community</li>
+      <li class="nav-item">Contact</li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <section class="top-row">
+      <div class="map-box">
+        <div class="map-title">Select Your Area of Interest</div>
+        <div id="map"></div>
+      </div>
+
+      <aside class="controls-box">
+        <div class="time-title">Select Time Period</div>
+        <label>To <input type="date" id="toDate" value="2020-07-15" /></label>
+        <label>From <input type="date" id="fromDate" value="2022-07-15" /></label>
+
+        <div class="side-buttons">
+          <button id="drawPolygon" class="pill">Draw Polygon</button>
+          <button id="fullRegion" class="pill outline">Full Region</button>
+        </div>
+
+        <button id="analyze" class="analysis-pill">Analysis</button>
+      </aside>
+    </section>
+
+    <section class="report-area">
+      <h2 class="report-title">Deforestation Report</h2>
+
+      <div class="report-content">
+        <div class="sat-thumb" id="sat-thumb">
+          <img
+            src="https://via.placeholder.com/220x220?text=Satellite"
+            alt="Satellite"
+          />
+          <div class="markers" id="markers"></div>
+        </div>
+
+        <div class="chart-box">
+          <canvas id="pieChart" width="420" height="260"></canvas>
+        </div>
+      </div>
+
+      <div class="report-controls">
+        <button id="monitor" class="green-btn">Monitor</button>
+        <button id="reset" class="outline-btn">Reset</button>
+      </div>
+
+      <form class="report-form" onsubmit="return false;">
+        <label class="rename">
+          Rename
+          <input
+            type="text"
+            id="renameInput"
+            placeholder="Interested Area"
+          />
+        </label>
+
+        <label class="notify">
+          <input type="checkbox" id="notifyCheck" /> Notification Alert
+        </label>
+
+        <div class="submit-row">
+          <button id="submitBtn" class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="page-footer">
+      © 2025 GreenGuard – Deforestation Detection System | Designed by GreenGuard
+    </footer>
+  </main>
 </div>
 
-        </button>
-      </div>
-    </header>
+<script src="script.js"></script>
 
-    <!-- Navigation bar -->
-    <nav class="main-nav">
-      <ul>
-        <li class="nav-item active">Home</li>
-        <li class="nav-item">Update</li>
-        <li class="nav-item">News</li>
-        <li class="nav-item">Community</li>
-        <li class="nav-item">Contact</li>
-      </ul>
-    </nav>
-
-    <!-- main content -->
-    <main class="main-content">
-
-      <!-- top map + controls row -->
-      <section class="top-row">
-        <div class="map-box">
-          <div class="map-title">Select your area of interest</div>
-          <!-- Keep Leaflet map so user still gets interactive map -->
-          <div id="map"></div>
-        </div>
-
-        <aside class="controls-box">
-          <div class="time-title">Select time Period</div>
-          <label>To <input type="date" id="toDate" value="2020-07-15"></label>
-          <label>From <input type="date" id="fromDate" value="2022-07-15"></label>
-
-          <div class="side-buttons">
-            <button id="drawPolygon" class="pill">Draw Polygone</button>
-            <button id="fullRegion" class="pill outline">Full Region</button>
-          </div>
-
-          <button id="analyze" class="analysis-pill">Analysis</button>
-        </aside>
-      </section>
-
-      <!-- Report Section -->
-      <section class="report-area">
-        <h2 class="report-title">Deforestation Report</h2>
-
-        <div class="report-content">
-          <!-- left small satellite with red markers overlay -->
-          <div class="sat-thumb" id="sat-thumb">
-            <img src="https://via.placeholder.com/220x220?text=Satellite" alt="satellite">
-            <div class="markers" id="markers"></div>
-          </div>
-
-          <!-- pie chart in blue box -->
-          <div class="chart-box">
-            <canvas id="pieChart" width="420" height="260"></canvas>
-          </div>
-        </div>
-
-        <!-- controls row under report -->
-        <div class="report-controls">
-          <button id="monitor" class="green-btn">Monitor</button>
-          <button id="reset" class="outline-btn">Reset</button>
-        </div>
-
-        <form class="report-form" onsubmit="return false;">
-          <label class="rename">
-            Rename
-            <input type="text" id="renameInput" placeholder="Interested Area">
-          </label>
-
-          <label class="notify">
-            <input type="checkbox" id="notifyCheck"> Notification Alert
-          </label>
-
-          <div class="submit-row">
-            <button id="submitBtn" class="submit-btn">Submit</button>
-          </div>
-        </form>
-      </section>
-
-      <footer class="page-footer">
-        © 2025 GreenGuard – Deforestation Detection System | Designed by [Your Name]
-      </footer>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+  </body>
 </html>
