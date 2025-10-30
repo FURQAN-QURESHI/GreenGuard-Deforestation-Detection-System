@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GreenGuard — Updates</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style-update.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="page-frame">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <h1 class="brand">GreenGuard</h1>
+
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-item">Home</li>
+          <li class="nav-item active">Updates</li>
+          <li class="nav-item">News</li>
+          <li class="nav-item">Community</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+      </nav>
+
+      <div class="profile-area">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="profile" class="profile-img">
+      </div>
+    </header>
+
+    <!-- AREAS GRID -->
+    <section class="areas-grid" id="areasGrid">
+      <div class="area-card" data-index="1">
+        <img src="https://via.placeholder.com/320x180?text=Area+1" alt="A1">
+        <div class="card-caption">Area of Interest-1</div>
+      </div>
+
+      <div class="area-card" data-index="2">
+        <img src="https://via.placeholder.com/320x180?text=Area+2" alt="A2">
+        <div class="card-caption">Area of Interest-2</div>
+      </div>
+
+      <div class="area-card" data-index="3">
+        <img src="https://via.placeholder.com/320x180?text=Area+3" alt="A3">
+        <div class="card-caption">Area of Interest-3</div>
+      </div>
+
+      <div class="area-card" data-index="4">
+        <img src="https://via.placeholder.com/320x180?text=Area+4" alt="A4">
+        <div class="card-caption">Area of Interest-4</div>
+      </div>
+
+      <div class="area-card" data-index="5">
+        <img src="https://via.placeholder.com/320x180?text=Area+5" alt="A5">
+        <div class="card-caption">Area of Interest-5</div>
+      </div>
+
+      <div class="area-card" data-index="6">
+        <img src="https://via.placeholder.com/320x180?text=Area+6" alt="A6">
+        <div class="card-caption">Area of Interest-6</div>
+      </div>
+    </section>
+
+    <!-- LAST UPDATE -->
+    <section class="last-update">
+      <h2>Last Update</h2>
+
+      <div class="update-content">
+        <!-- left preview -->
+        <div class="preview-box">
+          <img id="previewImage" src="https://via.placeholder.com/520x300?text=Select+an+Area" alt="preview">
+        </div>
+
+        <!-- right chart + controls -->
+        <div class="chart-controls">
+          <div class="date-row">
+            <label>To
+              <input type="date" id="toDate" value="2022-06-12">
+            </label>
+
+            <label>From
+              <input type="date" id="fromDate" value="2023-06-12">
+            </label>
+          </div>
+
+          <div class="chart-box">
+            <canvas id="updatePie" width="360" height="260"></canvas>
+          </div>
+
+          <div class="action-row">
+            <button id="monitorBtn" class="btn green">Monitor</button>
+            <button id="resetBtn" class="btn outline">Reset</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      © 2025 GreenGuard — Deforestation Detection System | Designed by GreenGuard 
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script src="update.js"></script>
+</body>
+</html>
