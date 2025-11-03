@@ -684,3 +684,5 @@ export default Dashboard;
 // 6-month date range selection
 
 // persist area in URL state
+
+// dashboard stats panel
