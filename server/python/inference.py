@@ -516,3 +516,5 @@ if __name__ == "__main__":
 # confidence threshold per model
 
 # pixel-to-hectares conversion
+
+# save output with metadata
