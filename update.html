@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GreenGuard — Updates</title>
 
-  <!-- CSS -->
+  <!-- Use the update page CSS you already have (keeps update layout unchanged) -->
   <link rel="stylesheet" href="style-update.css" />
 
   <!-- Chart.js -->
@@ -14,62 +14,61 @@
 <body>
   <div class="page-frame">
 
-    <!-- HEADER -->
-    <header class="header-wrapper">
-      <div class="top-header">
-        <h1 class="brand">GreenGuard</h1>
-        <div class="profile-area">
-          <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="profile" class="profile-img">
-        </div>
+    <!-- HEADER: replaced with the same header from your home page -->
+    <header class="top-header">
+      <h1 class="brand">GreenGuard</h1>
+
+      <div class="top-right">
+        <button class="profile-btn" title="Profile">
+          <div class="profile-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile" />
+          </div>
+        </button>
       </div>
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link active">Update</a></li>
-          <li><a href="#" class="nav-link">News</a></li>
-          <li><a href="#" class="nav-link">Community</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <!-- AREAS GRID -->
+    <!-- NAV (matches home page nav style and highlights Update) -->
+    <nav class="main-nav">
+      <ul>
+        <li class="nav-item"><a href="index.html" style="text-decoration:none; color:inherit;">Home</a></li>
+        <li class="nav-item active"><a href="update.html" style="text-decoration:none; color:inherit;">Update</a></li>
+        <li class="nav-item">News</li>
+        <li class="nav-item">Community</li>
+        <li class="nav-item">Contact</li>
+      </ul>
+    </nav>
+
+    <!-- AREAS GRID (kept from your original update.html) -->
     <section class="areas-grid" id="areasGrid">
       <div class="area-card" data-index="1">
         <img src="https://via.placeholder.com/320x180?text=Area+1" alt="A1">
         <div class="card-caption">Area of Interest-1</div>
       </div>
-
       <div class="area-card" data-index="2">
         <img src="https://via.placeholder.com/320x180?text=Area+2" alt="A2">
         <div class="card-caption">Area of Interest-2</div>
       </div>
-
       <div class="area-card" data-index="3">
         <img src="https://via.placeholder.com/320x180?text=Area+3" alt="A3">
         <div class="card-caption">Area of Interest-3</div>
       </div>
-
       <div class="area-card" data-index="4">
         <img src="https://via.placeholder.com/320x180?text=Area+4" alt="A4">
         <div class="card-caption">Area of Interest-4</div>
       </div>
-
       <div class="area-card" data-index="5">
         <img src="https://via.placeholder.com/320x180?text=Area+5" alt="A5">
         <div class="card-caption">Area of Interest-5</div>
       </div>
-
       <div class="area-card" data-index="6">
         <img src="https://via.placeholder.com/320x180?text=Area+6" alt="A6">
         <div class="card-caption">Area of Interest-6</div>
       </div>
     </section>
 
-    <!-- LAST UPDATE --> <!-- LAST UPDATE -->
+    <!-- LAST UPDATE (kept from your original update.html) -->
     <section class="last-update">
       <h2>Last Update</h2>
-
       <div class="update-content">
         <div class="preview-box">
           <img id="previewImage" src="https://via.placeholder.com/520x300?text=Select+an+Area" alt="preview">
@@ -77,13 +76,8 @@
 
         <div class="chart-controls">
           <div class="date-row">
-            <label>To
-              <input type="date" id="toDate" value="2022-06-12">
-            </label>
-
-            <label>From
-              <input type="date" id="fromDate" value="2023-06-12">
-            </label>
+            <label>To <input type="date" id="toDate" value="2022-06-12"></label>
+            <label>From <input type="date" id="fromDate" value="2023-06-12"></label>
           </div>
 
           <div class="chart-box">
@@ -98,12 +92,10 @@
       </div>
     </section>
 
-    <footer class="site-footer">
-      © 2025 GreenGuard — Deforestation Detection System | Designed by GreenGuard 
-    </footer>
+    <footer class="site-footer"> © 2025 GreenGuard — Deforestation Detection System | Designed by You </footer>
   </div>
 
-  <!-- JS -->
+  <!-- keep your existing update javascript -->
   <script src="update.js"></script>
 </body>
 </html>
