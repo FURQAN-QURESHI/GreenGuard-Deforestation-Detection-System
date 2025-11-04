@@ -170,3 +170,5 @@ print('   Bands: B2,B3,B4,B8,B11 + VV,VH');
 // Planetary Computer STAC (v3)
 
 // retry logic for STAC (v4)
+
+// progress logging
