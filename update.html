@@ -5,19 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GreenGuard — Updates</title>
 
-  <!-- Use the update page CSS you already have (keeps update layout unchanged) -->
   <link rel="stylesheet" href="style-update.css" />
-
-  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="page-frame">
-
-    <!-- HEADER: replaced with the same header from your home page -->
     <header class="top-header">
       <h1 class="brand">GreenGuard</h1>
-
       <div class="top-right">
         <button class="profile-btn" title="Profile">
           <div class="profile-icon">
@@ -27,7 +21,6 @@
       </div>
     </header>
 
-    <!-- NAV (matches home page nav style and highlights Update) -->
     <nav class="main-nav">
       <ul>
         <li class="nav-item"><a href="Home.html" style="text-decoration:none; color:inherit;">Home</a></li>
@@ -38,7 +31,6 @@
       </ul>
     </nav>
 
-    <!-- AREAS GRID (kept from your original update.html) -->
     <section class="areas-grid" id="areasGrid">
       <div class="area-card" data-index="1">
         <img src="https://via.placeholder.com/320x180?text=Area+1" alt="A1">
@@ -66,7 +58,6 @@
       </div>
     </section>
 
-    <!-- LAST UPDATE (kept from your original update.html) -->
     <section class="last-update">
       <h2>Last Update</h2>
       <div class="update-content">
@@ -84,18 +75,26 @@
             <canvas id="updatePie" width="360" height="260"></canvas>
           </div>
 
+          <!-- ✅ Added Section -->
+          <div class="notification-row">
+            <label class="switch">
+              <input type="checkbox" id="notifToggle" checked>
+              <span class="slider"></span>
+            </label>
+            <span class="notif-label">Updates Notification</span>
+          </div>
+
           <div class="action-row">
-            <button id="monitorBtn" class="btn green">Monitor</button>
-            <button id="resetBtn" class="btn outline">Reset</button>
+            <button id="removeBtn" class="btn red">Remove</button>
+            <button id="analyzeBtn" class="btn green">Analyze</button>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer"> © 2025 GreenGuard — Deforestation Detection System | Designed by GreenGuard </footer>
+    <footer class="site-footer">© 2025 GreenGuard — Deforestation Detection System | Designed by GreenGuard</footer>
   </div>
 
-  <!-- keep your existing update javascript -->
   <script src="update.js"></script>
 </body>
 </html>

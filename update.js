@@ -74,3 +74,10 @@ monitorBtn.addEventListener('click', () => {
 
 // init default (show nothing)
 updatePie(0);
+document.getElementById('removeBtn').addEventListener('click', () => {
+  alert('Area removed (demo).');
+});
+
+document.getElementById('analyzeBtn').addEventListener('click', () => {
+  alert('Analyzing selected area (demo).');
+});
