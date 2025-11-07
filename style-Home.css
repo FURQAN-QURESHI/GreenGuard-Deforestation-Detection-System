@@ -258,7 +258,7 @@ border-radius: 6px;
 cursor: pointer;
 }
 
-/* Form */
+/* Form *//* Form */
 .report-form {
 display: flex;
 align-items: center;
@@ -289,7 +289,7 @@ font-weight: 700;
 cursor: pointer;
 }
 
-/* Footer */
+/* Footer *//* Footer */
 .page-footer {
 text-align: center;
 color: #444;
