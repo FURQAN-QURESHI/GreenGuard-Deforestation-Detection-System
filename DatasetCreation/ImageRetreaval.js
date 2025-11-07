@@ -172,3 +172,5 @@ print('   Bands: B2,B3,B4,B8,B11 + VV,VH');
 // retry logic for STAC (v4)
 
 // progress logging
+
+// seasonal composite (v7)
