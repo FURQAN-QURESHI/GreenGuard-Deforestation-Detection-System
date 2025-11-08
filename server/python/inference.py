@@ -522,3 +522,5 @@ if __name__ == "__main__":
 # tune DeepLabV3+ weight
 
 # tune AttentionUNet + UNet++ weights
+
+# cache loaded models
