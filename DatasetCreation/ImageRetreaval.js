@@ -174,3 +174,5 @@ print('   Bands: B2,B3,B4,B8,B11 + VV,VH');
 // progress logging
 
 // seasonal composite (v7)
+
+// geographic metadata export (v8)
