@@ -229,7 +229,7 @@ body {
 /* CHART BOX */
 .chart-box {
   width: 100%;
-  border: 6px solid var(--blue-box);
+  /*border: 6px solid var(--blue-box);*/
   border-radius: 6px;
   padding: 6px;
   display: flex;
@@ -239,9 +239,10 @@ body {
   margin-left: 30px;
 }
 
-/* BUTTONS *//* BUTTONS */
+/* BUTTONS */
 .action-row {
   width: 100%;
+  padding: 10px;
   display: flex;
   justify-content: flex-start;
   gap: 14px;
@@ -355,7 +356,7 @@ body {
   height: 0;
 }
 
-/* slider *//* slider */
+/* slider */
 .slider {
   position: absolute;
   cursor: pointer;
