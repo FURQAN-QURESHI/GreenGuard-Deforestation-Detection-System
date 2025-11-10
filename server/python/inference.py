@@ -526,3 +526,5 @@ if __name__ == "__main__":
 # cache loaded models
 
 # split visualization helpers
+
+# batch inference multi polygons
