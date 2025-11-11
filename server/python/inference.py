@@ -528,3 +528,5 @@ if __name__ == "__main__":
 # split visualization helpers
 
 # batch inference multi polygons
+
+# emit GeoJSON overlay
