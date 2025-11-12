@@ -516,3 +516,17 @@ if __name__ == "__main__":
 # confidence threshold per model
 
 # pixel-to-hectares conversion
+
+# save output with metadata
+
+# tune DeepLabV3+ weight
+
+# tune AttentionUNet + UNet++ weights
+
+# cache loaded models
+
+# split visualization helpers
+
+# batch inference multi polygons
+
+# emit GeoJSON overlay
