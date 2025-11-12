@@ -1271,3 +1271,5 @@ export default History;
 // inline editing of report names
 
 // sort by date and name
+
+// detail modal with full view
