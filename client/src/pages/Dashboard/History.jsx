@@ -1273,3 +1273,5 @@ export default History;
 // sort by date and name
 
 // detail modal with full view
+
+// export all reports to CSV
