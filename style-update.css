@@ -229,7 +229,7 @@ body {
 /* CHART BOX */
 .chart-box {
   width: 100%;
-  border: 6px solid var(--blue-box);
+  /*border: 6px solid var(--blue-box);*/
   border-radius: 6px;
   padding: 6px;
   display: flex;
@@ -390,6 +390,12 @@ input:checked + .slider:before {
   background: var(--red);
   border: none;
   color: white;
+}
+
+.btn.green {
+  background: var(--green);
+  color: white;
+  border: none;
 }
 
 .btn.green {
