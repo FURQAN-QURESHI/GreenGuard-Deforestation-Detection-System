@@ -661,3 +661,5 @@ export default Contact;
 // redesign split-screen
 
 // success/failure feedback animation
+
+// finalize Contact page

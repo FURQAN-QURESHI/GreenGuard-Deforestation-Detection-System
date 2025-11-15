@@ -1236,3 +1236,5 @@ export default Community;
 // render posts list
 
 // post creation modal
+
+// final UI polish + animations

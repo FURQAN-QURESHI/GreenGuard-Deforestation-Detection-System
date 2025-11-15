@@ -173,3 +173,5 @@ module.exports = router;
 // extract python spawn helper
 
 // PUT to rename reports
+
+// handle ObjectId cast on DELETE
