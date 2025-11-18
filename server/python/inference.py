@@ -532,3 +532,5 @@ if __name__ == "__main__":
 # emit GeoJSON overlay
 
 # Earth Engine fallback
+
+# fix base64 mask encoding
