@@ -534,3 +534,5 @@ if __name__ == "__main__":
 # Earth Engine fallback
 
 # fix base64 mask encoding
+
+# cleanup model path config
