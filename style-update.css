@@ -398,9 +398,3 @@ input:checked + .slider:before {
   border: none;
 }
 
-/*delete*/
-.btn.green {
-  background: var(--green);
-  color: white;
-  border: none;
-}
