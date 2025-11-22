@@ -530,3 +530,9 @@ if __name__ == "__main__":
 # batch inference multi polygons
 
 # emit GeoJSON overlay
+
+# Earth Engine fallback
+
+# fix base64 mask encoding
+
+# cleanup model path config

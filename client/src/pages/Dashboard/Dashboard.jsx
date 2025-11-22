@@ -686,3 +686,7 @@ export default Dashboard;
 // persist area in URL state
 
 // dashboard stats panel
+
+// align error state with theme
+
+// abort pending requests on unmount
