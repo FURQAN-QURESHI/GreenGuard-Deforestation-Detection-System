@@ -688,3 +688,5 @@ export default Dashboard;
 // dashboard stats panel
 
 // align error state with theme
+
+// abort pending requests on unmount
