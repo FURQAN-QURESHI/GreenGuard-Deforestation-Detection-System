@@ -1066,3 +1066,5 @@ if __name__ == "__main__":
 # quality filtering pass (v6)
 
 # stratified sampling (v7)
+
+# final extractor with validation (v8)
