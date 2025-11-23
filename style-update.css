@@ -398,3 +398,9 @@ input:checked + .slider:before {
   border: none;
 }
 
+/*dt*/
+.btn.green {
+  background: var(--green);
+  color: white;
+  border: none;
+}
