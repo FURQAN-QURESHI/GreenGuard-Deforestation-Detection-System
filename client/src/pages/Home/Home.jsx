@@ -358,3 +358,5 @@ export default Home;
 // feature cards section
 
 // CTA section and footer
+
+// team section
