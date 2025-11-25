@@ -292,3 +292,5 @@ export default Signup;
 // otp verification step
 
 // handle already verified state
+
+// unify login/signup visuals
