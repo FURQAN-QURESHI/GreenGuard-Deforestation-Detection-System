@@ -536,3 +536,5 @@ if __name__ == "__main__":
 # fix base64 mask encoding
 
 # cleanup model path config
+
+# fix torch deprecation warnings
