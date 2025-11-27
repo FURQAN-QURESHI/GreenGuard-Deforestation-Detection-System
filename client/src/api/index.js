@@ -39,3 +39,5 @@ export default API;
 // fix baseURL port
 
 // add updateReport and analyzeArea exports
+
+// add request timeout
