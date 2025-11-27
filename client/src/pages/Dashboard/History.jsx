@@ -1275,3 +1275,5 @@ export default History;
 // detail modal with full view
 
 // export all reports to CSV
+
+// fix date formatting
