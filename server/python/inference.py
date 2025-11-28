@@ -538,3 +538,5 @@ if __name__ == "__main__":
 # cleanup model path config
 
 # fix torch deprecation warnings
+
+# verbose mode for debug
