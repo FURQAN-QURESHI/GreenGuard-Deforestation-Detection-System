@@ -175,3 +175,5 @@ module.exports = router;
 // PUT to rename reports
 
 // handle ObjectId cast on DELETE
+
+// prevent duplicate report names
