@@ -240,3 +240,5 @@ export default ForgotPassword;
 // fix(auth): handle OTP resend rate limiting
 
 // multi-step forgot flow
+
+// handle otp resend rate limit
