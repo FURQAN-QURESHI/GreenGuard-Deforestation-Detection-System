@@ -47,3 +47,5 @@ WiredTiger*
 mongod.lock
 
 # chore: extend .gitignore for additional artifacts
+
+# extend gitignore
