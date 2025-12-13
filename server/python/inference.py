@@ -542,3 +542,5 @@ if __name__ == "__main__":
 # verbose mode for debug
 
 # final edge case handling
+
+# gradient-based uncertainty
