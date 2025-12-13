@@ -180,3 +180,5 @@ print('   Bands: B2,B3,B4,B8,B11 + VV,VH');
 // multi-region parallel fetch (v9)
 
 // unify logging format (v11)
+
+// consolidate error messages
