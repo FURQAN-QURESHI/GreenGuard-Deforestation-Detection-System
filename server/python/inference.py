@@ -546,3 +546,5 @@ if __name__ == "__main__":
 # gradient-based uncertainty
 
 # per-class IoU metrics
+
+# handle empty polygons
