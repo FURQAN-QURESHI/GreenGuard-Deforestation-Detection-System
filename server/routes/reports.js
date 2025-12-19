@@ -177,3 +177,7 @@ module.exports = router;
 // handle ObjectId cast on DELETE
 
 // prevent duplicate report names
+
+// include mask URL + area
+
+// improve error messaging

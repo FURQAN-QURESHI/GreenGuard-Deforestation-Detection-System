@@ -234,3 +234,5 @@ exports.resetPassword = async (req, res) => {
 // forgotPassword + resetPassword
 
 // clean up expired pending users
+
+// sanitize user objects before send
