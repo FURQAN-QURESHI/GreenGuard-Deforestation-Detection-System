@@ -548,3 +548,5 @@ if __name__ == "__main__":
 # per-class IoU metrics
 
 # handle empty polygons
+
+# structured logging
