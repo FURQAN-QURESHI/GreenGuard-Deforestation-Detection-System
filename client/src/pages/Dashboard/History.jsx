@@ -1277,3 +1277,5 @@ export default History;
 // export all reports to CSV
 
 // fix date formatting
+
+// bulk delete
