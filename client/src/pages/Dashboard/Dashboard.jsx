@@ -690,3 +690,5 @@ export default Dashboard;
 // align error state with theme
 
 // abort pending requests on unmount
+
+// responsive fixes
