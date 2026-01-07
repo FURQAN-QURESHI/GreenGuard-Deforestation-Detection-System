@@ -552,3 +552,5 @@ if __name__ == "__main__":
 # structured logging
 
 # minor ml bug fix
+
+# inference speed tweak
