@@ -312,3 +312,5 @@ export default MapComponent;
 // fix tile URL Satellite view
 
 // satellite/street view toggle
+
+// fix leaflet on mobile
