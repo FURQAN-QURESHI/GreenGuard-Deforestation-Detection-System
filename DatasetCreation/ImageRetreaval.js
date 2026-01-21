@@ -182,3 +182,5 @@ print('   Bands: B2,B3,B4,B8,B11 + VV,VH');
 // unify logging format (v11)
 
 // consolidate error messages
+
+// fallback STAC endpoint
