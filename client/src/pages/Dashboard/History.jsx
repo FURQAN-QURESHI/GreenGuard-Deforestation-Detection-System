@@ -1279,3 +1279,5 @@ export default History;
 // fix date formatting
 
 // bulk delete
+
+// fix long name overflow
