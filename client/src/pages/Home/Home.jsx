@@ -360,3 +360,5 @@ export default Home;
 // CTA section and footer
 
 // team section
+
+// improve mobile layout
