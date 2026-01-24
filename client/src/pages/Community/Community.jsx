@@ -1240,3 +1240,5 @@ export default Community;
 // final UI polish + animations
 
 // join/leave community action
+
+// better empty state
