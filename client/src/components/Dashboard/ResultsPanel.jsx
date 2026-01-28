@@ -631,3 +631,5 @@ export default ResultsPanel;
 // render mask overlay
 
 // before/after compare slider
+
+// improve pdf layout
