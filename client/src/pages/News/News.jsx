@@ -750,3 +750,5 @@ export default News;
 // feat(news): finalize News page with saved articles
 
 // environmental topic filters
+
+// improve news card design
