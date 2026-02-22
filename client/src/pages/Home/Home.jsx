@@ -362,3 +362,5 @@ export default Home;
 // team section
 
 // improve mobile layout
+
+// new landing section idea
