@@ -364,3 +364,5 @@ export default Home;
 // improve mobile layout
 
 // new landing section idea
+
+// polish landing animations
