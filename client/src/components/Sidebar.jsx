@@ -168,3 +168,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+// sidebar collapse on mobile
