@@ -692,3 +692,5 @@ export default Dashboard;
 // abort pending requests on unmount
 
 // responsive fixes
+
+// minor ui fixes
