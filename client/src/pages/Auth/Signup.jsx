@@ -294,3 +294,5 @@ export default Signup;
 // handle already verified state
 
 // unify login/signup visuals
+
+// signup validation fixes
