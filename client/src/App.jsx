@@ -62,3 +62,5 @@ export default App;
 // fix(client): ensure all routes protected as required
 
 // wire auth routes in App
+
+// frontend final routing pass
